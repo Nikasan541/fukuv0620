@@ -44,6 +44,7 @@ namespace fukuv0620
                     answer = random.Next(51);
                     bingo++;
                     life = 5;
+                    textBox2.Text = $"{life}";
                 }
             }
             else if (yosou < answer)
@@ -58,6 +59,7 @@ namespace fukuv0620
                     answer = random.Next(51);
                     bingo++;
                     life = 5;
+                    textBox2.Text = $"{life}";
                 }
             }
         }

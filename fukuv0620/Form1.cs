@@ -7,6 +7,7 @@ namespace fukuv0620
         int count = 0;
         int bingo;
         int life =5;
+        int deth;
 
         public Form1()
         {

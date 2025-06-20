@@ -7,9 +7,11 @@ namespace fukuv0620
         int count = 0;
         int bingo;
         int life =5;
+
         public Form1()
         {
             InitializeComponent();
+            textBox2.Text = $"{life}";
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -20,11 +22,9 @@ namespace fukuv0620
         private void button1_Click(object sender, EventArgs e)
         {
             count++;
-            textBox2.Text = $"{life}";
             MessageBox.Show($"{count}âÒñ⁄ÇÃíßêÌÅAÇ†Ç∆{life}âÒ");
             int yosou;
             yosou = int.Parse(textBox1.Text);
-            life = int.Parse(textBox2.Text);
             if (yosou == answer)
             {
                 MessageBox.Show($"Bingo!!");

@@ -6,7 +6,7 @@ namespace fukuv0620
         int answer = random.Next(51);
         int count = 0;
         int bingo;
-        int life;
+        int life =5;
         public Form1()
         {
             InitializeComponent();
@@ -36,7 +36,7 @@ namespace fukuv0620
             {
                 MessageBox.Show($"ookikatta");
                 life--;
-                textBox2.Text = $"{life-1}";
+                textBox2.Text = $"{life}";
                 if (life == 0)
                 {
                     MessageBox.Show($"‚ ‚È‚½‚ÍŽ€‚ñ‚¾");
@@ -46,7 +46,7 @@ namespace fukuv0620
             {
                 MessageBox.Show($"chiisakatta");
                 life--;
-                textBox2.Text = $"{life - 1}";
+                textBox2.Text = $"{life}";
                 if(life == 0)
                 {
                     MessageBox.Show($"‚ ‚È‚½‚ÍŽ€‚ñ‚¾");

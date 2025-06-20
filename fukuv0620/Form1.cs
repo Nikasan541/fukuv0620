@@ -40,6 +40,10 @@ namespace fukuv0620
                 if (life == 0)
                 {
                     MessageBox.Show($"‚ ‚È‚½‚ÍŽ€‚ñ‚¾");
+                    count = 0;
+                    answer = random.Next(51);
+                    bingo++;
+                    life = 5;
                 }
             }
             else if (yosou < answer)
@@ -50,6 +54,10 @@ namespace fukuv0620
                 if(life == 0)
                 {
                     MessageBox.Show($"‚ ‚È‚½‚ÍŽ€‚ñ‚¾");
+                    count = 0;
+                    answer = random.Next(51);
+                    bingo++;
+                    life = 5;
                 }
             }
         }
